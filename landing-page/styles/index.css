@@ -1,0 +1,159 @@
+:root{
+    --primary-color: #ff0000;
+    --item-color: #272b30;
+}
+
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+
+/* header */
+
+i {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* main */
+
+section {
+    background: var(--item-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+#form-section {
+    background: #212529;
+}
+
+input {
+    background: var(--item-color);
+}
+
+.container-navegador, #main-doc {
+    width: 90%;
+}
+
+#main-doc {
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* formulario */
+
+label {
+    color: var(--item-color);
+}
+
+#container-form, .cont-button {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    width: 400px;
+}
+
+.btn {
+    width: 150px;
+    background: var(--primary-color);
+}
+
+/* seccion informacion */
+
+
+span {
+    margin-top: 0;
+    display: block;
+    font-size: 20px;
+}
+
+.container-info h1, span {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cont {
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    padding: 10px;
+}
+
+.info .p-detalles{
+    font-size: 24px;
+    margin: auto 10px auto 40px;
+}
+
+.info img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+/* seccion precios */
+
+#precios-section {
+    text-align: center;
+}
+
+.cont-card {
+    margin: 25px 0px;
+}
+
+#precio {
+    padding: 50px;
+    font-size: 50px;
+}
+
+.card-footer {
+    padding: 20px;
+}
+
+/* media query */
+
+@media (min-width: 923px) and (max-width: 950px) {
+    #precio {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+    
+    .info .p-detalles{
+        font-size: 18px;
+    }
+    
+    .info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #precio {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 540px) {
+    
+    .info .p-detalles{
+        font-size: 16px;
+    }
+    
+    .info img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
