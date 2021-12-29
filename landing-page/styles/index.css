@@ -15,7 +15,7 @@ i {
     color: var(--primary-color);
 }
 
-.nav-link:hover {
+.navbar-nav .active a {
     color: var(--primary-color);
 }
 
@@ -80,6 +80,10 @@ span {
     margin-bottom: 0;
 }
 
+h1 {
+    text-style: bold;
+}
+
 .cont {
     padding: 20px;
 }
@@ -87,6 +91,7 @@ span {
 .info {
     display: flex;
     padding: 10px;
+    align-items: center;
 }
 
 .info .p-detalles{
@@ -119,41 +124,156 @@ span {
     padding: 20px;
 }
 
-/* media query */
+/* media querys */
 
-@media (min-width: 923px) and (max-width: 950px) {
-    #precio {
-        font-size: 24px;
-    }
-}
+@media (max-width: 460px) {
 
-@media (min-width: 541px) and (max-width: 768px) {
-    
-    .info .p-detalles{
-        font-size: 18px;
+    /* formulario */
+    #email {
+        width: 250px;
     }
-    
+
+    /* seccion informacion */
+    .container-info h1 {
+        font-size: 36px;
+    }
+
+    .container-info span {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .cont {
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .info {
+        display: block;
+        text-align: center;
+    }
+
     .info img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
+    .info .p-detalles {
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    /* seccion precios */
     #precio {
-        font-size: 50px;
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .cont-card {
+        font-size: 13px;
     }
 }
 
-@media (min-width: 480px) and (max-width: 540px) {
-    
-    .info .p-detalles{
+@media (max-width: 540px) {
+
+    /* formulario */
+    #email {
+        width: 350px;
+    }
+
+    /* seccion informacion */
+    .container-info h1 {
+        font-size: 36px;
+    }
+
+    .container-info span {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .cont {
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info .p-detalles {
+        font-size: 16px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    /* seccion precios */
+    #precio {
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .cont-card {
         font-size: 16px;
     }
-    
-    .info img {
-        width: 100px;
-        height: 100px;
+}
+
+@media (max-width: 768px) {
+
+
+    /* seccion informacion */
+    .container-info h1 {
+        font-size: 36px;
+    }
+
+    .container-info span {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .cont {
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+
+    .info .p-detalles {
+        font-size: 18px;
+        text-align: justify;
+        margin: 10px;
+    }
+
+    /* seccion precios */
+    #precio {
+        padding: 40px 0;
+        font-size: 40px;
+    }
+
+    .cont-card {
+        font-size: 14px;
     }
 }
 
+@media (min-width: 769px) and (max-width: 1241px) {
 
+
+    /* seccion precios */
+    #precio {
+        padding: 50px 0;
+        font-size: 40px;
+    }
+
+    .cont-card {
+        font-size: 20px;
+    }
+}
 
